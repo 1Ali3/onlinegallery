@@ -26,33 +26,60 @@
         <!-- Page Heading -->
         <header>
             <div id="logo">
-                <a href="/"><img src="img/log.png" width="160" height="80" alt="На главную" title="На главную"></a>
+                <a href="/"><img src="/img/log.png" width="160" height="80" alt="На главную" title="На главную"></a>
             </div>
 
             <div id="menuHead">
-                <a href="about.php"><div style="margin-right: 3%">О нас</div></a>
-                <a href="feedback.php"><div style="margin-right: 3%, font-family: Manrope;">Обратная связь</div></a>
+                <a href="/about"><div style="margin-right: 3%;font-family: Manrope;">О нас</div></a>
+                <a href="/feedback"><div style="margin-right: 3%; font-family: Manrope;">Обратная связь</div></a>
+                @if(Auth::check())
+                <div>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button style="background-color: transparent;-webkit-appearance: none;border: 0;color: #B7B7B7;" type="submit">Выйти</button>
+                   
+                </form>
+                </div>
+                @else
+                <a href="/login"><div style="margin-right: 3%; font-family: Manrope;">Вход</div></a>
+                @endif
             </div>
         </header>
-        <img src="img/ban3.jpg" width="1300" height="100" ></a>
-    <div id="im">
-        <a href="index.php"><img src="img/log.png" width="90" height="45" alt="На главную" title="На главную"></a>  
-    </div>	
+        @if(isset($banner))
+        {{ $banner }}
+        @endif
+        <div id="im">
+            <a href="index.php"><img src="/img/log.png" width="90" height="45" alt="На главную" title="На главную"></a>  
+        </div>	
 
-    <div id="wrapper">
+        <div id="wrapper">
+            <div id="leftCol">
+                <!-- Page Content -->
 
-        <!-- Page Content -->
-        <main>
-            {{ $slot }}
-        </main>
-        <div id="rightCol">
-            <div class="banner">
-                <img src="img/banner_1.jpg" alt="Реклама" title="Реклама">
+                {{ $slot }}
             </div>
-            <div class="banner">
-                <img src="img/banner_2.jpg" alt="Реклама" title="Реклама">
+            <div id="rightCol">
+                <div class="banner">
+                    <img src="/img/banner_1.jpg" alt="Реклама" title="Реклама">
+                </div>
+                <div class="banner">
+                    <img src="/img/banner_2.jpg" alt="Реклама" title="Реклама">
+                </div>
             </div>
         </div>
-    </div>
-</body>
+
+    </body>
+    <footer>
+        <div id="social">
+            <a href="http:/instagram.com" title="Инстаграмм" target="_blank">
+                <img src="/img/inst.png" alt="Инст" title="Инст">
+            </a>
+            <a href="http:/pinterest.com" title="Пинтерест" target="_blank">
+                <img src="/img/pin.png" alt="Пин" title="Пин">
+            </a>
+        </div>
+        <div id="rights">
+            Все права защищены &copy; <?php echo date('Y') ?>
+        </div>
+    </footer>
 </html>

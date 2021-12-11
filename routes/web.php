@@ -15,7 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers;
 
-Route::get('/', Controllers\HomeController::class);
+Route::get('/', Controllers\HomeController::class); //главная страница
+Route::get('/feedback', function() { return view("feedback"); }); //возвращает шаблон (view("feedback"))
+Route::post('/feedback', Controllers\FeedbackController::class); //обрабатывает форму и отправляет данные в бд в контроллере 
+Route::get('/gallery/{id}', Controllers\GalleryController::class); //
+Route::get('/about', function() { return view("about"); }); //
+Route::get('/profile', function() { return view("profile"); })->middleware(['auth']); //
+
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');

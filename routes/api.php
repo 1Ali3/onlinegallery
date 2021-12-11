@@ -16,3 +16,4 @@ use App\Http\Controllers\Api;
 */
 
 Route::get('/painting/{id}', [Api\PaintingController::class, "get"]);
+Route::post('/painting/', [Api\PaintingController::class, "get"]);

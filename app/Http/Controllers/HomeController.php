@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Facades\DB;
+use App\Models\Painting;
 
 class HomeController extends Controller {
 
     function __invoke() {
-        $paintings = DB::table("paintings")->get();
-        return view('home', ["paintings" => $paintings]);
+        $paintings = Painting::all(); //через модель Painting получаем все картины 
+        return view('home', ["paintings" => $paintings]); //передаем шаблон с доп параметрами (картинами)
     }
 
 }

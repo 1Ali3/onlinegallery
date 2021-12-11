@@ -1,198 +1,202 @@
 @charset "utf-8";
 * {
-	margin: 0;
-	padding: 0;
-	outline: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 html {height: 100%}
 
 
 
 body {
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	color: #fff;
-	font-family: "Segoe UI", Arial, sans-serif;
-	font-size: 1em;
-	line-height: 135%;
-	float: left;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 1em;
+    line-height: 135%;
+    float: left;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /*ie8*/
-	
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*ie8*/
+
 }
 
 a{
-	color: #d38484;
-	text-decoration: none;	
+    color: #d38484;
+    text-decoration: none;	
 }
 
 a:hover{
-	color: #efdea0;
+    color: #efdea0;
 }
 
 a, a:hover {
-	-webkit-transition: all.6s ease;
-	-moz-transition: all.6s ease;
-	transition: all.6s ease;	
+    -webkit-transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    transition: all.6s ease;	
 }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 /* СТИЛИ ДЛЯ ШАПКИ */
 header {
-	color: #fff;
-	width: 94%;
-	height: 100px;
-	float: left;
-	padding: 3%;
-	background: rgb(35,131,106);
-	background: linear-gradient(180deg, rgba(35,131,106,1) 0%, rgba(0,22,16,0.09614268070509457) 100%);
-	margin-bottom: 20px;
-	
-	
+    color: #fff;
+    width: 94%;
+    height: 100px;
+    float: left;
+    padding: 3%;
+    background: rgb(35,131,106);
+    background: linear-gradient(180deg, rgba(35,131,106,1) 0%, rgba(0,22,16,0.09614268070509457) 100%);
+    margin-bottom: 20px;
+
+
 }
 
 header #logo {
-	width: 40%;
-	float: left;
+    width: 40%;
+    float: left;
 }
 header #menuHead {
 
-	margin-top: 10px;
-	width: 17%;
-	float: right;
-	text-align: right;
+    margin-top: 10px;
+    width: 25%;
+    float: right;
 }
 header #menuHead div {
-	float: left;
-	padding: 8px;
-	background-color: #043733;
-	border-radius: 15px;
+    float: left;
+    padding: 8px;
+    background-color: #043733;
+    border-radius: 15px;
+    cursor: pointer;
 }
+header #menuHead button {
+    cursor: pointer;
+}
+
 header #menuHead div:hover {
-	background-color: #05413C ;
+    background-color: #05413C ;
 }
 header #menuHead a{
 
-	color: #B7B7B7;
+    color: #B7B7B7;
 }
 
 /* СТИЛИ ДЛЯ ФУТЕРА*/
 footer {
-	width: 100%;
-	height: 140px;
-	float: left;
-	/*background-color: #07554E;*/
-	background: rgb(35,131,106);
-	background: linear-gradient(0deg, rgba(35,131,106,1) 0%, rgba(0,22,16,0.09614268070509457) 100%);
-	margin-top: 10px;
-	margin-bottom: 10px;
+    width: 100%;
+    height: 140px;
+    float: left;
+    /*background-color: #07554E;*/
+    background: rgb(35,131,106);
+    background: linear-gradient(0deg, rgba(35,131,106,1) 0%, rgba(0,22,16,0.09614268070509457) 100%);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 footer #social {
-	margin-top: 60px;
-	float: left;
-	width: 50%;
+    margin-top: 60px;
+    float: left;
+    width: 50%;
 }
 footer #social img {
-	width: 35px;
-	height: 35 px;
-	float: left;
-	margin-right: 10px;
-	margin-left: 20px;
+    width: 35px;
+    height: 35 px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 footer #rights {
-	margin-top: 60px;
-	float: right;
-	width: 50%;
-	text-align: right;
-	font-size: 1.1em;
+    margin-top: 60px;
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 1.1em;
 }
 
 /*СТИЛИ ДЛЯ ВСЕГО ДОКУМЕНТА*/
 
 #wrapper {
-	width: 80%;
-	margin-left: 10%;
-	float: left;
+    width: 80%;
+    margin-left: 10%;
+    float: left;
 }
 
 #im{
-	position: fixed;
-	right: 0; bottom: 0;
+    position: fixed;
+    right: 0; bottom: 0;
 }
 
 /*СТИЛИ ДЛЯ ЛЕВОЙ КОЛОНКИ*/
 
 #wrapper #leftCol{
-	width: 70%;
-	margin-right: 10%;
-	float: left;
-	color: F0F0F0;
-   
+    width: 70%;
+    margin-right: 10%;
+    float: left;
+    color: F0F0F0;
+
 }
 
 #wrapper #leftCol #bigArticle{
-	margin-top: 20px;
-	font-family: Manrope;
-	width: 80%;
-	margin-left: 10%;
-	background: black;
-	border: 4px outset #23836a;
-	color: white;
-	padding: 1%;
-	border-radius: 15px;
-	
-	
+    margin-top: 20px;
+    font-family: Manrope;
+    width: 80%;
+    margin-left: 10%;
+    background: black;
+    border: 4px outset #23836a;
+    color: white;
+    padding: 1%;
+    border-radius: 15px;
+
+
 }
 #wrapper #leftCol #bigArticle img{
-	width: 100%;
-	float: left;
-	margin-bottom: 10px;
-	border-radius: 15px;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    border-radius: 15px;
 
-	
+
 }
 /*#wrapper #leftCol #bigArticle h2{
-	font-weight: normal;
-	font-size: 1.4em;
-	color: black;
+        font-weight: normal;
+        font-size: 1.4em;
+        color: black;
 }*/
 
 #wrapper #leftCol #bigArticle p{
-	width: 90%;
-	font-size: 15px;
-	margin-left: 5%;
-	font-family: Manrope;
+    width: 90%;
+    font-size: 15px;
+    margin-left: 5%;
+    font-family: Manrope;
 }
 
 #wrapper #leftCol #bigArticle div.more{
-	font-family: Manrope;
-	margin-left: 500px;
-	font-size: 11px;
-	padding: 4px;
-	border-radius: 20px;
-	background-color: #23836a;
-	color: white;
-	height: 60px;
-	width: 40px;
-	text-align: center;
-	margin-top: -20px;
-	margin-bottom: 10px;
+    font-family: Manrope;
+    margin-left: 500px;
+    font-size: 11px;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #23836a;
+    color: white;
+    height: 60px;
+    width: 40px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 #wrapper #leftCol #bigArticle div.more img{
-	width: 100%;
+    width: 100%;
 }
 
 #wrapper #leftCol #bigArticle div.more:hover{
-	background-color: #878787;
+    background-color: #878787;
 }
 
 
@@ -200,81 +204,81 @@ footer #rights {
 /* О НАС */
 
 #wrapper #leftCol #about_us {
-	width: 80%;
-	margin-left: 10%;
-	background-color: black;
-	padding: 2%;
-	border-radius: 4px;
-	font-family: Manrope;
-	border: 4px outset #23836a;
-	border-radius: 15px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: black;
+    padding: 2%;
+    border-radius: 4px;
+    font-family: Manrope;
+    border: 4px outset #23836a;
+    border-radius: 15px;
 }
 
 /* ГАЛЕРЕЯ */
 #wrapper #leftCol #about_us img{
-	border-radius: 15px;
+    border-radius: 15px;
 }
 
 /* ОБРАТНАЯ СВЯЗЬ */
 #wrapper #leftCol input{
-	font-family: Manrope;
-	width: 50%;
-	margin-left: 25%;
-	float: left;
-	border-radius: 4px;
-	border: 4px outset #23836a;
-	background-color: black;
-	padding: 10px;	
-	margin-bottom: 20px;
-	font-size: 1.1em;
-	color: white;
+    font-family: Manrope;
+    width: 50%;
+    margin-left: 25%;
+    float: left;
+    border-radius: 4px;
+    border: 4px outset #23836a;
+    background-color: black;
+    padding: 10px;	
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: white;
 }
 #wrapper #leftCol input:focus{
-	border: 2px solid #f78080;
+    border: 2px solid #f78080;
 }
 
 
 
 #wrapper #leftCol input#done{
-	width: 53%;
-	background-color: #043733;
+    width: 53%;
+    background-color: #043733;
 }
 
 #wrapper #leftCol input#done:hover{
-	border: 2px solid #f8d881;
-	cursor: pointer;
+    border: 2px solid #f8d881;
+    cursor: pointer;
 }
 
 #wrapper #leftCol textarea{
-	width: 50%;
-	height: 150px;
-	margin-left: 25%;
-	float: left;
-	font-family: Manrope;
-	border-radius: 4px;
-	border: 2px solid #23836a;
-	background-color: black;
-	padding: 10px;	
-	margin-bottom: 10px;
-	font-size: 1.2em;
-	resize: none;
-	color: white;
+    width: 50%;
+    height: 150px;
+    margin-left: 25%;
+    float: left;
+    font-family: Manrope;
+    border-radius: 4px;
+    border: 2px solid #23836a;
+    background-color: black;
+    padding: 10px;	
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    resize: none;
+    color: white;
 }
 /*СТИЛИ ДЛЯ ПРАВОЙ КОЛОНКИ*/
 
 #wrapper #rightCol{
-	width: 20%;
-	float: left;
+    width: 20%;
+    float: left;
 }
 
 #wrapper #rightCol .banner{
-	width: 100%;
-	float: left;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	border: 1px solid silver;
-	box-sizing: border-box;
-	border-radius: 4px;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 
@@ -288,47 +292,47 @@ footer #rights {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin-top: 50px;
+    max-width: 1000px;
+    position: relative;
+    margin-top: 50px;
 }
 
 
 
 /* The dots/bullets/indicators */
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #23836a;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #23836a;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #e2eeeb;
+    background-color: #e2eeeb;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+    .text {font-size: 11px}
 }
